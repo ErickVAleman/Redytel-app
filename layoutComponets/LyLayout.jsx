@@ -6,9 +6,9 @@ import LySidder from "./LySidder";
 import LyContent from "./LyContent";
 import LyFooter from "./LyFooter";
 
-export default ({ children, footer }) => (
+export default ({ children, footer, validate }) => (
     <Layout>
-        <LyHeader menuItems={[{ title: "Home", href: "/" }, { title: "Tareas", href: "/task" }, { title: "Tareas Terminadas", href: "/taskilled" }, { title: "Usuarios", href: "/users" }]} />
+        <LyHeader validate={validate} menuItems={[{ title: "Home", href: "/" }, { title: "Tareas", href: "/task" }, { title: "Tareas Terminadas", href: "/taskilled" }, { title: "Usuarios", href: "/users" }]} />
         <Layout>
             <Layout>
                 <LyContent>
@@ -20,4 +20,4 @@ export default ({ children, footer }) => (
                 { footer }
             </LyFooter>
     </Layout>
-)
+);

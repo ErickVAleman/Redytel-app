@@ -4,9 +4,9 @@ export default class MyDocument extends Document {
         return(
             <html lang="es">
             <Head>
-                <meta charset="UTF-8" />
+                <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-                <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+                <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
                 <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet"></link>
                 <link href="https://fonts.googleapis.com/css?family=Love+Ya+Like+A+Sister" rel="stylesheet"></link>
                 <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet"></link>
