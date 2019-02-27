@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import Router from "next/router";
 import LyLayout from "../layoutComponets/LyLayout";
-import login from "./login";
 
 export default class Index extends Component {
     constructor(loginUser, sessionUser){
@@ -29,13 +28,15 @@ export default class Index extends Component {
     }
     render(){
         return (
-            <LyLayout validate={this.sessionUser} footer="Milka's App 2019@2020" >
+            <LyLayout User={this.state.user} validate={this.sessionUser} footer="Milka's App 2019@2020" >
                 <div>
                     Id: {this.state.user.uuid}
                     <br />
                     User: { this.state.user.nombre }
                     <br />
                     Email: { this.state.user.email }
+                    <br />
+                    Rol: { this.state.user.rol }
                 </div>
             </LyLayout>
         )

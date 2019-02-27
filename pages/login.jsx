@@ -37,6 +37,17 @@ class NormalLoginForm extends React.Component {
             uuid,
             nombre,
             email,
+            password,
+            uuid,
+            nombre,
+            apellidos,
+            direccion,
+            fech_nac,
+            habilidades,
+            habilidades_desc,
+            rol,
+            createdAt,
+            updateAt
 
           }
         }
